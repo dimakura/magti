@@ -1,4 +1,4 @@
 # -*- encoding : utf-8 -*-
 module Magti
-  VERSION = "0.1.0.beta5"
+  VERSION = "0.1.0"
 end
