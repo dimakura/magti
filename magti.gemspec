@@ -17,5 +17,6 @@ Gem::Specification.new do |gem|
 
   gem.add_development_dependency 'rspec', '~> 2'
 
-  gem.add_runtime_dependency 'httparty', '~> 0.8' 
+  gem.add_runtime_dependency 'c12-commons'
+  gem.add_runtime_dependency 'httparty', '~> 0.8'
 end

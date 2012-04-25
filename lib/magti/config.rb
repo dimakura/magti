@@ -8,6 +8,9 @@ module Magti
   # URL for tracking SMS status.
   SMS_TRACK_URL = 'http://81.95.160.47/bi/track.php'
 
+  # Maximum size of individual SMS message.
+  MAX_SIZE = 160
+
   # Service configuration class.
   #
   # Access it, using <code>Magti.config</code>.
