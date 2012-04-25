@@ -2,6 +2,7 @@
 require 'set'
 require 'cgi'
 require 'httparty'
+require 'c12-commons'
 
 module Magti
   # Response object.
@@ -20,7 +21,7 @@ module Magti
     raise ArgumentError, 'illegal mobile number' unless C12.correct_mobile?(mobile)
     raise ArgumentError, 'max size exceeded' if text.length > Magti::MAX_SIZE
     options = Magti.config.security_options
-    if options.nil? or options.empty? or !Set.new(options.keys).proper_subset?(Set[:username, :password, :client_id, :service_id])
+    if options.nil? or options.empty? or Set[:username, :password, :service_id, :client_id] != Set.new(options.keys)
       raise ArgumentError, 'specify Magti.config(options) with :username, :password, :client and :service keys'
     end
     options = options.merge(:to => "995#{mobile}", :text => text)
