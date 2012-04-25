@@ -33,7 +33,10 @@ module Magti
     end
   end
 
-  def self.config
+  def self.config(params = {})
+    params.each do |k, v|
+      Magti::Config.instance.send "#{k}=".to_sym, v
+    end
     Magti::Config.instance
   end
 end

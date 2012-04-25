@@ -17,3 +17,17 @@ describe 'Test config' do
     specify { subject[:service_id].should == 100 }
   end
 end
+
+describe 'Test config assignment using hash' do
+  before(:all) do
+    Magti.config({:username => 'dk', :password => 'password', :client => 99, :service => 66})
+  end
+  context 'options for sending SMS' do
+    subject { Magti.config.security_options }
+    it { should be_instance_of Hash }
+    specify { subject[:username].should == 'dk' }
+    specify { subject[:password].should == 'password' }
+    specify { subject[:client_id].should == 99 }
+    specify { subject[:service_id].should == 66 }
+  end
+end
