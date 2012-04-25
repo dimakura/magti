@@ -1,6 +1,8 @@
-# Magti
+# Magti 
 
-TODO: Write a gem description
+Magti is a gem for sending SMS messages through [MagtiGSM](http://www.magticom.ge/) gateway.
+
+You need access to Magti's gateway server, also they provide you with user/password parameters.
 
 ## Installation
 
@@ -18,12 +20,8 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+TODO: Comming soon
 
-## Contributing
+## Additional resources
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Added some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+Documentation on how this gem is working, can be found in `refs` subdirectory.
