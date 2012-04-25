@@ -50,7 +50,7 @@ After message is sent, then you can track it's progress by calling:
 status = Magti.track_sms(resp.id)
 ```
 
-Status value `0` indicates, that the message was delivered to the mobile phone.
+Status value `1` indicates, that the message was delivered to the mobile phone.
 
 ## Additional resources
 
