@@ -1,8 +1,8 @@
 # Magti 
 
-Magti is a gem for sending SMS messages through [MagtiGSM](http://www.magticom.ge/) gateway.
+Magti is a gem for sending SMS messages through [Magticom](http://www.magticom.ge/) gateway.
 
-You need access to Magti's gateway server, also they provide you with user/password parameters.
+You need access to Magticom's gateway server, also they provide you with user/password parameters.
 
 ## Installation
 
@@ -24,4 +24,4 @@ TODO: Comming soon
 
 ## Additional resources
 
-Documentation on how this gem is working, can be found in `refs` subdirectory.
+Protocol description which is used by this gem, can be found in `refs` subdirectory.
