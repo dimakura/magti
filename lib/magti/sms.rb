@@ -20,7 +20,7 @@ module Magti
     raise ArgumentError, 'illegal mobile number' unless C12.correct_mobile?(mobile)
     raise ArgumentError, 'max size exceeded' if text.length > Magti::MAX_SIZE
     options = Magti.config.security_options
-    if options.nil? or options.empty? or !Set.new(options.keys).proper_subset?(Set[:username, :password, :client, :service])
+    if options.nil? or options.empty? or !Set.new(options.keys).proper_subset?(Set[:username, :password, :client_id, :service_id])
       raise ArgumentError, 'specify Magti.config(options) with :username, :password, :client and :service keys'
     end
     options = options.merge(:to => "995#{mobile}", :text => text)
