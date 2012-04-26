@@ -23,7 +23,7 @@ Or install it yourself as:
 Start with configuring the gem:
 
 ```ruby
-Magti.config({:username => 'testuser', :password => 'secret', :service => 1, :client => 1})
+Magti.config(:username => 'testuser', :password => 'secret', :service => 1, :client => 1)
 ```
 
 `username`, `password`, `service` and `client` parameters are provided by Magticom itself.
