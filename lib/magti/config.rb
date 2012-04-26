@@ -26,10 +26,6 @@ module Magti
     # service
     attr_accessor :service
 
-    def initialize
-      self.service = 1
-    end
-
     # Returns security options hash.
     def security_options
       { :username => self.username, :password => self.password, :client_id => self.client, :service_id => self.service }
