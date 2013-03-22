@@ -44,7 +44,7 @@ puts resp.code # => 0000 for normal processing
 puts resp.id   # => nil unless resp.code = '0000'
 ```
 
-After message is sent, then you can track it's progress by calling:
+After message is sent you can track it's progress by calling:
 
 ```ruby
 status = Magti.track_sms(resp.id)
