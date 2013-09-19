@@ -31,7 +31,7 @@ module Magti
     options = Magti.config.security_options
     Magti.validate_security_options(options)
     options = options.merge(:to => "995#{mobile}", :text => text, :coding => 2)
-    http_resp = HTTParty.get(Magti::SMS_SEND_URL, {:query => options}).body
+    http_resp = HTTParty.post(Magti::SMS_SEND_URL, {:body => options}).body
     resp = Response.new
     resp.code, resp.id = http_resp.split(' - ')
     resp
