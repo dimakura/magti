@@ -2,7 +2,6 @@
 require 'set'
 require 'cgi'
 require 'httparty'
-require 'c12-commons'
 
 module Magti
 
@@ -29,8 +28,6 @@ module Magti
   # @param text text to be sent
   # @return Response object with response code and message ID
   def self.send_sms(mobile, text)
-    raise ArgumentError, 'illegal mobile number' unless C12.correct_mobile?(mobile)
-    # raise ArgumentError, 'max size exceeded' if text.length > Magti::MAX_SIZE
     options = Magti.config.security_options
     Magti.validate_security_options(options)
     options = options.merge(:to => "995#{mobile}", :text => text, :coding => 2)
@@ -48,5 +45,4 @@ module Magti
     http_resp = HTTParty.get(Magti::SMS_TRACK_URL, {:query => options}).body
     http_resp.to_i
   end
-
 end

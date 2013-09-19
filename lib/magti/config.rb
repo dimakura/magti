@@ -3,7 +3,7 @@ require 'singleton'
 
 module Magti
   # URL for sending SMS.
-  SMS_SEND_URL  = 'http://81.95.160.47/mt/sendsms'
+  SMS_SEND_URL  = 'http://81.95.160.47/mt/oneway'
 
   # URL for tracking SMS status.
   SMS_TRACK_URL = 'http://81.95.160.47/bi/track.php'
