@@ -14,6 +14,7 @@ Gem::Specification.new do |gem|
   gem.name          = "magti"
   gem.require_paths = ["lib"]
   gem.version       = Magti::VERSION
+  gem.license = 'MIT'
 
   gem.add_development_dependency 'rspec', '~> 2'
   gem.add_runtime_dependency 'httparty', '~> 0.8'
