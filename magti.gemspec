@@ -3,7 +3,7 @@ require File.expand_path('../lib/magti/version', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.authors       = ["Dimitri Kurashvili"]
-  gem.email         = ["dimitri@c12.ge"]
+  gem.email         = ["dimakura@gmail.com"]
   gem.description   = %q{Magti SMS gateway}
   gem.summary       = %q{Gem for sending SMS using MagtiGSM.ge gateway}
   gem.homepage      = "http://github.com/dimakura/magti"
